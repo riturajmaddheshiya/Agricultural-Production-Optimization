@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+   <title>Recommendation System</title>
+  </head>
+
+
+
+
+
+ <body  background="https://www.investopedia.com/thmb/af2_szAGyG2cxHvdXISlmhi2Rg4=/3100x2067/filters:fill(auto,1)/harvest-164458970-505d26b04f134939a829746343346ec8.jpg" height="300" border="1" width="500">      
+  <h1>Crop Recommendation System</h1>
+      <div class="row center">
+        <h3>Tells which crop to harvest
+        <br>
+        </h3>
+      </div>
+
+  <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Nitrogen</b></label>
+            <br>
+           <input placeholder="N" name='N' id='first_name' type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="sec_name"><b>Phosphrous </b></label>
+            <br>
+          <input id="sec_name" name="P" placeholder="P"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="thrd_name"><b>potasium</b></label>
+            <br>
+          <input id="thrd_name" name="K" placeholder="K" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+          <label for="temperature"><b>temperature</b></label>
+          <br>
+        <input id="temperature" name="temperature" placeholder="temperature" type="text" class="validate">
+
+      </div>
+      <div class="input-field col s4">
+        <label for="humidity"><b>humidity</b></label>
+        <br>
+        <input id="humidity" name="humidity" placeholder="humidity" type="text" class="validate">
+      </div>
+     <div class="input-field col s4">
+       <label for="ph"><b>ph_value</b></label>
+       <br>
+       <input id="ph" name="ph" placeholder="ph" type="text" class="validate">
+      </div>
+     <div class="input-field col s4">
+       <label for="rainfall"><b>rainfall</b></label>
+       <br>
+       <input id="rainfall" name="rainfall" placeholder="rainfall" type="text" class="validate">
+      </div>
+  
+
+      <div class="row center">
+
+          <button type="submit">Predict crop</button>
+      </div>
+    </form>
+  </div>
+
+ <br>
+ <h1>{{pred}}</h1>
+  <br>
+
+  <br><br>
+  <marquee direction="left"> <h1> contact us on 2019uec1070@mnit.ac.in</h1></marquee>
+  
+ </body>
+</html>
